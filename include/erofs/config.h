@@ -45,6 +45,7 @@ struct erofs_configure {
 	bool c_noinline_data;
 	bool c_ignore_mtime;
 	bool c_ztailpacking;
+	bool c_ignore_mtime;
 
 #ifdef HAVE_LIBSELINUX
 	struct selabel_handle *sehnd;
