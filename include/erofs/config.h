@@ -46,6 +46,7 @@ struct erofs_configure {
 	bool c_ignore_mtime;
 	bool c_ztailpacking;
 	bool c_ignore_mtime;
+	bool c_showprogress;
 
 #ifdef HAVE_LIBSELINUX
 	struct selabel_handle *sehnd;
@@ -92,6 +93,9 @@ static inline int erofs_selabel_open(const char *file_contexts)
 	return -EINVAL;
 }
 #endif
+
+void erofs_update_progressinfo(const char *fmt, ...);
+char *erofs_trim_for_progressinfo(const char *str, int placeholder);
 
 #ifdef __cplusplus
 }
