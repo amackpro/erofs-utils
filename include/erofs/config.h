@@ -43,7 +43,6 @@ struct erofs_configure {
 	char c_timeinherit;
 	char c_chunkbits;
 	bool c_noinline_data;
-	bool c_ignore_mtime;
 	bool c_ztailpacking;
 	bool c_ignore_mtime;
 	bool c_showprogress;

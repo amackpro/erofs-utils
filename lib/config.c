@@ -100,7 +100,7 @@ static bool __erofs_is_progressmsg;
 
 char *erofs_trim_for_progressinfo(const char *str, int placeholder)
 {
-	struct winsize winsize;
+	struct winsize;
 	int col, len;
 
 #ifdef GWINSZ_IN_SYS_IOCTL
